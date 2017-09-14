@@ -58,7 +58,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param listener                  点击事件
      */
     protected void configToolbar(boolean allowBack, String title, boolean allowOperate, View.OnClickListener listener) {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolBar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         // 标题
@@ -89,7 +89,7 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param listener     点击事件
      */
     protected void configToolbar(boolean allowBack, int titleId, boolean allowOperate, View.OnClickListener listener) {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolBar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         // 标题
