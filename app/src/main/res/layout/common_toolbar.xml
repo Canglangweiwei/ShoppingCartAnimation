@@ -42,5 +42,4 @@
             android:textStyle="bold"
             android:visibility="gone" />
     </LinearLayout>
-
 </android.support.v7.widget.Toolbar>
