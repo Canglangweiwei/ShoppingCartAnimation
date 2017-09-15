@@ -21,7 +21,8 @@ import android.widget.TextView;
  * 添加商品动画
  */
 @SuppressWarnings("ALL")
-public class ShoppingCartAnimationView extends TextView implements ValueAnimator.AnimatorUpdateListener {
+public class ShoppingCartAnimationView extends TextView
+        implements ValueAnimator.AnimatorUpdateListener {
 
     public static final int VIEW_SIZE = 20;
 

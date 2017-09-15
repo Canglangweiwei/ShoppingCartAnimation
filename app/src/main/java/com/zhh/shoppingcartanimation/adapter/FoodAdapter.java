@@ -128,4 +128,8 @@ public class FoodAdapter extends BaseAdapter {
         DecimalFormat format = new DecimalFormat("0.00");
         return format.format(new BigDecimal(price));
     }
+
+    public void reset(){
+        notifyDataSetChanged();
+    }
 }

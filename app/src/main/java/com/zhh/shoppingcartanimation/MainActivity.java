@@ -98,7 +98,7 @@ public class MainActivity extends BaseActivity implements FoodAdapter.FoodAction
         FoodModel model = foodsList.get(item);
         model.setNum(model.getNum() + 1);
 
-        adapter.notifyDataSetChanged();
+        adapter.reset();
         // 计算总价
         calculatePrice();
     }
@@ -110,7 +110,8 @@ public class MainActivity extends BaseActivity implements FoodAdapter.FoodAction
     public void reduceGoods(int position) {
         FoodModel model = foodsList.get(position);
         model.setNum(model.getNum() - 1);
-        adapter.notifyDataSetChanged();
+        adapter.reset();
+        // 计算总价
         calculatePrice();
     }
 
