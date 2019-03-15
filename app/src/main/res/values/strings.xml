@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">ShoppingCartAnimation</string>
-    <string name="_0_0">0.0</string>
-    <string name="_0_0_">￥0.0元</string>
-    <string name="go_cal">去结算</string>
-    <string name="_0">0</string>
+   <string name="app_name">ShoppingCartAnimation</string>
+   <string name="_0_0">0.0</string>
+   <string name="_0_0_">￥0.0元</string>
+   <string name="go_cal">去结算</string>
+   <string name="_0">0</string>
 </resources>

@@ -1,89 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.zhh.shoppingcartanimation.MainActivity">
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:orientation="vertical">
 
-    <include layout="@layout/common_toolbar" />
+   <include layout="@layout/common_toolbar" />
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@android:color/white"
-        android:divider="#C8C8C8"
-        android:dividerHeight="0.5dp"
-        android:footerDividersEnabled="false"
-        android:headerDividersEnabled="false" />
+   <ListView
+      android:id="@+id/listView"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:background="@android:color/white"
+      android:divider="#C8C8C8"
+      android:dividerHeight="0.1dp"
+      android:footerDividersEnabled="false"
+      android:headerDividersEnabled="false" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#EFEFEF" />
+   <View
+      android:layout_width="match_parent"
+      android:layout_height="0.5dp"
+      android:background="#EFEFEF" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@android:color/white"
-        android:orientation="horizontal">
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@android:color/white"
+      android:orientation="horizontal">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+      <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
 
-            <RelativeLayout
-                android:id="@+id/rl_goods_fits_car"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp">
+         <RelativeLayout
+            android:id="@+id/rl_goods_fits_car"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp">
 
-                <ImageView
-                    android:id="@+id/iv_goods_car_nums"
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_centerVertical="true"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/ic_goods_fits_car" />
-
-                <TextView
-                    android:id="@+id/good_numtv"
-                    android:layout_width="22dp"
-                    android:layout_height="22dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:background="@drawable/sp_common_circle2yellow"
-                    android:gravity="center"
-                    android:text="@string/_0_0"
-                    android:textColor="@android:color/white"
-                    android:textSize="12sp" />
-            </RelativeLayout>
+            <ImageView
+               android:id="@+id/iv_goods_car_nums"
+               android:layout_width="36dp"
+               android:layout_height="36dp"
+               android:layout_centerVertical="true"
+               android:contentDescription="@string/app_name"
+               android:src="@drawable/ic_goods_fits_car" />
 
             <TextView
-                android:id="@+id/goods_all_pricetv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@+id/rl_goods_fits_car"
-                android:text="@string/_0_0_"
-                android:textColor="@color/colorAccent"
-                android:textSize="16sp" />
+               android:id="@+id/good_numtv"
+               android:layout_width="22dp"
+               android:layout_height="22dp"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_alignParentRight="true"
+               android:background="@drawable/sp_common_circle2yellow"
+               android:gravity="center"
+               android:text="@string/_0_0"
+               android:textColor="@android:color/white"
+               android:textSize="12sp" />
+         </RelativeLayout>
 
-            <TextView
-                android:id="@+id/goods_submit_tv"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/sp_common_fill_bg"
-                android:gravity="center"
-                android:text="@string/go_cal"
-                android:textColor="@android:color/white"
-                android:textSize="20sp" />
-        </RelativeLayout>
-    </LinearLayout>
+         <TextView
+            android:id="@+id/goods_all_pricetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/rl_goods_fits_car"
+            android:layout_toRightOf="@+id/rl_goods_fits_car"
+            android:text="@string/_0_0_"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+         <TextView
+            android:id="@+id/goods_submit_tv"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sp_common_fill_bg"
+            android:gravity="center"
+            android:text="@string/go_cal"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+      </RelativeLayout>
+   </LinearLayout>
 </LinearLayout>

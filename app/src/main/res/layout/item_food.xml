@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@android:color/white"
-    android:gravity="center_vertical"
-    android:orientation="horizontal">
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:background="@android:color/white"
+   android:gravity="center_vertical"
+   android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/item_good_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
-        android:src="@drawable/images" />
+   <ImageView
+      android:id="@+id/item_good_image"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:contentDescription="@string/app_name"
+      android:scaleType="fitXY"
+      android:src="@drawable/images" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp">
+   <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="5dp">
 
-        <LinearLayout
+      <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+
+         <TextView
+            android:id="@+id/item_good_name"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="水果" />
 
-            <TextView
-                android:id="@+id/item_good_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                tools:text="水果" />
-
-            <TextView
-                android:id="@+id/item_gooddescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:ellipsize="end"
-                android:maxLines="2"
-                android:textSize="14sp"
-                tools:text="水果" />
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/item_good_price"
+         <TextView
+            android:id="@+id/item_gooddescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:textColor="#FF4001"
-            android:textSize="18sp"
-            tools:text="￥14.00" />
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="14sp"
+            tools:text="水果" />
+      </LinearLayout>
 
-        <ImageView
-            android:id="@+id/item_good_reduce"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@+id/item_good_count"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_goods_fitting_reduce" />
+      <TextView
+         android:id="@+id/item_good_price"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_gravity="bottom"
+         android:textColor="#FF4001"
+         android:textSize="18sp"
+         tools:text="￥14.00" />
 
-        <LinearLayout
-            android:id="@+id/item_good_count"
+      <ImageView
+         android:id="@+id/item_good_reduce"
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:layout_alignParentBottom="true"
+         android:layout_toLeftOf="@+id/item_good_count"
+         android:contentDescription="@string/app_name"
+         android:src="@drawable/ic_goods_fitting_reduce" />
+
+      <LinearLayout
+         android:id="@+id/item_good_count"
+         android:layout_width="wrap_content"
+         android:layout_height="24dp"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_toLeftOf="@+id/item_good_add"
+         android:gravity="center">
+
+         <TextView
+            android:id="@+id/item_good_num"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_toLeftOf="@+id/item_good_add"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textSize="18sp" />
+      </LinearLayout>
 
-            <TextView
-                android:id="@+id/item_good_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/_0"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <ImageView
-            android:id="@+id/item_good_add"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="12dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_goods_fitting_add" />
-    </RelativeLayout>
+      <ImageView
+         android:id="@+id/item_good_add"
+         android:layout_width="24dp"
+         android:layout_height="24dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="12dp"
+         android:contentDescription="@string/app_name"
+         android:src="@drawable/ic_goods_fitting_add" />
+   </RelativeLayout>
 </LinearLayout>
