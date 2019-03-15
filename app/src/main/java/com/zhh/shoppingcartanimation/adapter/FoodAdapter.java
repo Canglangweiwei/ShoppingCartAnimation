@@ -67,8 +67,8 @@ public class FoodAdapter extends BaseAdapter {
 
       // 加载图片
       Glide.with(context).load(model.getPath())
-          .placeholder(R.drawable.images)
-          .error(R.drawable.images)
+          .placeholder(R.drawable.img_noimg)
+          .error(R.drawable.img_noimg)
           .into(viewHolder.item_good_image);
 
       viewHolder.item_good_add.setOnClickListener(new View.OnClickListener() {
