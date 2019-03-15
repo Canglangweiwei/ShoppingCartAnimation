@@ -57,7 +57,7 @@
                android:layout_alignParentRight="true"
                android:background="@drawable/sp_common_circle2yellow"
                android:gravity="center"
-               android:text="@string/_0_0"
+               android:text="@string/_0"
                android:textColor="@android:color/white"
                android:textSize="12sp" />
          </RelativeLayout>
