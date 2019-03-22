@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.makeramen.roundedimageview.RoundedImageView;
 import com.zhh.shoppingcartanimation.R;
 import com.zhh.shoppingcartanimation.model.FoodModel;
 
@@ -66,7 +67,8 @@ public class FoodAdapter extends BaseAdapter {
       viewHolder.item_good_num.setText(String.valueOf(model.getNum()));
 
       // 加载图片
-      Glide.with(context).load(model.getPath())
+      Glide.with(context)
+          .load(model.getPath())
           .placeholder(R.drawable.img_noimg)
           .error(R.drawable.img_noimg)
           .into(viewHolder.item_good_image);
@@ -96,7 +98,7 @@ public class FoodAdapter extends BaseAdapter {
    class ViewHolder {
 
       @Bind(R.id.item_good_image)
-      ImageView item_good_image;
+      RoundedImageView item_good_image;
       @Bind(R.id.item_good_name)
       TextView item_good_name;
       @Bind(R.id.item_good_price)
